@@ -1,0 +1,200 @@
+%-------------------------
+% Resume in Latex
+% Author : Kathir Meyyappan
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins - decreased for more space
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-0.40in}   % was -0.75in
+\addtolength{\textheight}{1.25in}   % was 1.5in
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - small gap after title rule
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Kathir Meyyappan} \\ \vspace{4pt}
+    \small \href{mailto:kathirmey@gmail.com}{\underline{kathirmey@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/kathirmeyyappan}{\underline{linkedin/kathirmeyyappan}} $|$
+    \href{https://github.com/kathirmeyyappan}{\underline{github/kathirmeyyappan}} $|$
+    \href{https://info.kathirm.com}{\underline{kathirm.com}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Chicago}{Chicago, IL}
+      {Mathematics + Computer Science; GPA: 3.94}{September 2022 -- June 2026}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Database Systems (Graduate), Machine Learning, Speech Technologies (Graduate), Adversarial ML, Operating Systems, Algorithms, Abstract Algebra, Real Analysis, Topology, Formal Languages, Probability Theory}
+        \resumeItem{Involvement: Algo Group (President), Japanese Animation Society (Vice President), ChiData (Undergrad Researcher)}
+        \resumeItem{Distinctions: Robert Maynard Hutchins Scholar (top 10\%), Dean's List, 3x AIME Qualifier}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Notion}{San Francisco, CA}
+      {Software Engineer Intern}{September 2025 -- December 2025}
+      \resumeItemListStart
+        \resumeItem{Designed a framework to create custom integrity checks that regularly report on $\sim$200 Postgres database shards}
+        \resumeItem{Reduced diagnosis time on schema drift incidents from days to minutes, removing need for manual investigative queries}
+        \resumeItem{Initiated DevEx efforts to create a remote, durable workflow that automates complex + long-running schema migrations}
+        \resumeItem{Investigated and migrated high-traffic (2M+ QPS) Redis clusters, reducing blast-radius for Notion's caching layers}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Arrowstreet Capital}{Boston, MA}
+      {Quantitative Developer Intern}{June 2025 -- August 2025}
+      \resumeItemListStart
+        \resumeItem{Worked in Research Group, developing high-performance core Python libraries to increase alpha research productivity}
+        \resumeItem{Built an end-to-end distributed computing framework for processing larger-than-memory batches of financial tick data}
+        \resumeItem{Implemented load balancing and caching mechanisms to increase job capacity 1500x using Polars and AWS Athena}
+        \resumeItem{Explored cross-asset research benefits in using LLMs for empirical feature extraction on over 2.5 million bond filings}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Amazon}{Palo Alto, CA}
+      {Software Development Engineer Intern}{June 2024 -- August 2024}
+      \resumeItemListStart
+        \resumeItem{Increased AWS DataZone's database performance—used bitmaps to speed up numeric aggregation queries by over 20x}
+        \resumeItem{Implemented histogram generation feature, allowing for more granular client-side access to numerics in the database}
+        \resumeItem{Architected Entity Store inspection utilities, facilitating the use of REST-based database communication protocols}
+        \resumeItem{Created 7 critical API endpoints, enabling access to internal DynamoDB and S3 storage frameworks for sev forensics}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ChiData}{Chicago, IL}
+      {Undergraduate Researcher}{October 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Infrastructure-related work on relational database system CrocodileDB under Prof. Aaron Elmore @ UChicago}
+        \resumeItem{Implemented result caches and query subplan detection in Rust to reduce compute redundancy and boost query efficiency}
+        \resumeItem{Wrote end-to-end DB persistence mechanism (via shutdown-time serialization) for volatile state recovery upon reboot}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Institute of Politics}{Chicago, IL}
+      {Software Developer}{October 2023 -- January 2024}
+      \resumeItemListStart
+        \resumeItem{Identified malicious false-citation practices in ~200 political flyers with University of Chicago Institute of Politics}
+        \resumeItem{Utilized LLM (Llama2) + regex to identify 1000+ misinformation sources and pipeline data into Google Drive workflow}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Dräger}{Andover, MA}
+      {Software Engineer Intern}{June 2023 -- September 2023}
+      \resumeItemListStart
+        \resumeItem{Solved defect-tracking bottleneck in product lifecycle by automating issue reporting, reducing Jira traffic by 85\%}
+        \resumeItem{Developed, documented, and deployed internal desktop application that streamlines quarterly FDA communication process}
+        \resumeItem{Wrote OpenXML C\# scripts to execute 2500+ JQL (Jira Query Language) queries per day to generate and file reports}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Rust, Python, C, TypeScript, Go, C\#, R, SQL} \\
+     \textbf{Tech}{: AWS, Postgres, Redis, Memcached, DynamoDB, Terraform, Grafana, Polars, PyTorch, Docker, Honeycomb, pganalyze} \\
+     \textbf{Languages}{: English, Japanese, Tamil}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
