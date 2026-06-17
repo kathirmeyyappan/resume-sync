@@ -116,8 +116,9 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Chicago}{Chicago, IL}
-      {Mathematics B.A., Computer Science B.S. (graduated with highest honors)}{September 2022 -- June 2026}
+      {Mathematics B.A., Computer Science B.S. with Honors}{September 2022 -- June 2026}
       \resumeItemListStart
+        \resumeItem{Summa Cum Laude, Robert Maynard Hutchins Scholar, Databases Research, Database Systems TA}
         \resumeItem{Relevant Coursework: Machine Learning, Database Systems, Operating Systems, Distributed Systems, Algorithms, Abstract Algebra, Real Analysis, Topology, Formal Languages, Combinatorics, Stochastic Processes, etc.}
         % \resumeItem{Involvement: Algo Group (President), Japanese Animation Society (Vice President), ChiData (Undergrad Researcher)}
       \resumeItemListEnd
@@ -135,6 +136,17 @@
       \resumeItemListEnd
 
     \resumeSubheading
+      {University of Chicago}{Chicago, IL}
+      {Undergraduate Researcher}{October 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Infrastructure-related work on relational database system CrocodileDB under Prof. Aaron Elmore @ UChicago}
+        \resumeItem{Implemented result caches and query subplan detection in Rust to reduce compute redundancy and boost query efficiency}
+        \resumeItem{Wrote end-to-end DB persistence mechanism (via shutdown-time serialization) for volatile state recovery upon reboot}
+        \resumeItem{Co-published a paper on using frame locality, predictive translation, pointer swizzling, etc. to make buffer pools faster}
+        % \resumeItem{TAed for undergraduate and graduate sections of CMSC 23500/33550 Database Systems}
+      \resumeItemListEnd
+
+    \resumeSubheading
       {Notion}{San Francisco, CA}
       {Software Engineer Intern}{September 2025 -- December 2025}
       \resumeItemListStart
@@ -142,16 +154,6 @@
         \resumeItem{Reduced diagnosis time on schema drift incidents from days to minutes, removing need for manual investigative queries}
         \resumeItem{Initiated DevEx efforts to create a remote, durable workflow that automates complex + long-running schema migrations}
         \resumeItem{Investigated and migrated high-traffic (2M+ QPS) Redis clusters, reducing blast-radius for Notion's caching layers}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {UChicago Department of Computer Science}{Chicago, IL}
-      {Undergraduate Researcher}{October 2024 -- Present}
-      \resumeItemListStart
-        \resumeItem{Infrastructure-related work on relational database system CrocodileDB under Prof. Aaron Elmore @ UChicago}
-        \resumeItem{Implemented result caches and query subplan detection in Rust to reduce compute redundancy and boost query efficiency}
-        \resumeItem{Wrote end-to-end DB persistence mechanism (via shutdown-time serialization) for volatile state recovery upon reboot}
-        \resumeItem{Currently co-writing a paper on using super-scalar interleaving to make buffer pools and frame caches faster}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -165,7 +167,7 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Amazon}{Palo Alto, CA}
+      {Amazon Web Services}{Palo Alto, CA}
       {Software Development Engineer Intern}{June 2024 -- August 2024}
       \resumeItemListStart
         \resumeItem{Increased AWS DataZone's database performance—used bitmaps to speed up numeric aggregation queries by over 20x}
@@ -196,9 +198,9 @@
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
+    {\item{
      \textbf{Programming Languages}{: Rust, Python, C, TypeScript, Go, C\#, R, SQL} \\
-     \textbf{Tech}{: AWS, Postgres, Redis, Memcached, DynamoDB, Terraform, Grafana, Polars, PyTorch, Docker, Honeycomb, pganalyze} \\
+     \textbf{Tech}{: AWS, Postgres, Redis, Memcached, DynamoDB,  Grafana, Polars, PyTorch, Docker, Honeycomb, pganalyze} \\ % Terraform
      \textbf{Languages}{: English, Japanese, Tamil}
     }}
  \end{itemize}
