@@ -18,7 +18,14 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{listings}
+\usepackage{xcolor}
 \input{glyphtounicode}
+
+\lstset{
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue}
+}
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -132,7 +139,8 @@
       {Modal}{New York, NY}
       {Member of Technical Staff}{July 2026 -- Present}
       \resumeItemListStart
-        \resumeItem{MTS, Systems}
+        \resumeItem{I'm on the core services team, where we work on queuing, routing, auto-scaling, etc. for Modal's serving layer}
+        \resumeItem{We own the logic for primitives like \lstinline|modal.Function|, \lstinline|modal.Queue|, and \lstinline|modal.Dict|, among other things}
       \resumeItemListEnd
 
     \resumeSubheading
